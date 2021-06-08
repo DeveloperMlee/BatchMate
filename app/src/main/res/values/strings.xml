@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BatchMate</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="msg">*Your WhatsApp No. is Required only for sending your child progress and important update about the class</string>
+    <string name="begin_your_child_s_journey">Begin Your Child\'s Journey</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

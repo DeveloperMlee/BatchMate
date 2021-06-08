@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group>
+    <item
+        android:id="@+id/notification"
+        android:title="Notification"
+        />
+    <item
+        android:id="@+id/aboutUs"
+        android:title="About Us"
+        />
+    <item
+        android:id="@+id/rateUs"
+        android:title="Rate us on Play Store"
+        />
+    <item
+        android:id="@+id/legal"
+        android:title="Legal"
+        />
+    <item
+        android:id="@+id/inviteFri"
+        android:title="Invite Friends"
+        />
+</group>
+
+
+
+</menu>
