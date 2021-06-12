@@ -1,9 +1,11 @@
 package com.krudo.batchmate;
 
+import android.animation.ArgbEvaluator;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -31,6 +33,11 @@ public class HomeFragment extends Fragment {
         // Required empty public constructor
     }
     ImageSlider slider;
+    ViewPager viewPager;
+    listAdaptor adaptor;
+    Integer[] colors=null;
+    List<ListModel> models;
+    ArgbEvaluator argbEvaluator=new ArgbEvaluator();
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -66,6 +73,40 @@ public class HomeFragment extends Fragment {
                     }
                 });
 
+
+        viewPager=view.findViewById(R.id.viewPager);
+        loadCards();
+        //set viewpager change listener
+        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
+
+
         return view;
+    }
+
+    private void loadCards() {
+
+        models=new ArrayList<>();
+        models.add(new ListModel(R.drawable.bag,"Manoj Goshwami"));
+        models.add(new ListModel(R.drawable.pot,"Arya Bhatta"));
+        models.add(new ListModel(R.drawable.bag,"Albert Einstein"));
+        adaptor =new listAdaptor(models,getContext());
+
+        viewPager.setAdapter(adaptor);
+        viewPager.setPadding(5,0,200,0);
     }
 }
