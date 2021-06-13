@@ -33,8 +33,12 @@ public class HomeFragment extends Fragment {
         // Required empty public constructor
     }
     ImageSlider slider;
-    ViewPager viewPager;
+    ViewPager viewPager ,liveViewPager,trendingViewpager;
+    List<TrendingModel>trendingModelList;
     listAdaptor adaptor;
+    LiveAdaptor liveAdaptor;
+    TrendingAdaptor trendingAdaptor;
+    List<LiveModel>liveModelList;
     Integer[] colors=null;
     List<ListModel> models;
     ArgbEvaluator argbEvaluator=new ArgbEvaluator();
@@ -73,7 +77,42 @@ public class HomeFragment extends Fragment {
                     }
                 });
 
+        trendingViewpager=view.findViewById(R.id.trendingViewpager);
+        loadTreCards();
+        trendingViewpager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
+        liveViewPager=view.findViewById(R.id.liveViewPager);
+        loadViewCards();
+        liveViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
         viewPager=view.findViewById(R.id.viewPager);
         loadCards();
         //set viewpager change listener
@@ -96,6 +135,27 @@ public class HomeFragment extends Fragment {
 
 
         return view;
+    }
+
+    private void loadTreCards() {
+        trendingModelList=new ArrayList<>();
+        trendingModelList.add(new TrendingModel(R.drawable.painting));
+        trendingModelList.add(new TrendingModel(R.drawable.painting));
+        trendingModelList.add(new TrendingModel(R.drawable.painting));
+        trendingAdaptor=new TrendingAdaptor(trendingModelList,getContext());
+        trendingViewpager.setAdapter(trendingAdaptor);
+        trendingViewpager.setPadding(5,0,300,0);
+
+    }
+
+    private void loadViewCards() {
+        liveModelList=new ArrayList<>();
+        liveModelList.add(new LiveModel(R.drawable.bag,"Manoj Goshwami"));
+        liveModelList.add(new LiveModel(R.drawable.pot,"Arya Bhatta"));
+        liveModelList.add(new LiveModel(R.drawable.bag,"Albert Einstein"));
+        liveAdaptor=new LiveAdaptor(liveModelList,getContext());
+        liveViewPager.setAdapter(liveAdaptor);
+        liveViewPager.setPadding(5,0,200,0);
     }
 
     private void loadCards() {
