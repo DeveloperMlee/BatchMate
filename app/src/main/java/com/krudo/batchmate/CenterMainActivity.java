@@ -9,13 +9,15 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.MenuItem;
-import android.widget.Switch;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
+import com.krudo.batchmate.Fragments.CraftRoomFragment;
+import com.krudo.batchmate.Fragments.DiscoverFragment;
+import com.krudo.batchmate.Fragments.HomeFragment;
+import com.krudo.batchmate.Fragments.ProfileFragment;
 
 public class CenterMainActivity extends AppCompatActivity {
 

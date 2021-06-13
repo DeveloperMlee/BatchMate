@@ -1,4 +1,4 @@
-package com.krudo.batchmate;
+package com.krudo.batchmate.Model;
 
 public class TrendingModel {
     private  int image;

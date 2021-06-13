@@ -1,13 +1,17 @@
-package com.krudo.batchmate;
+package com.krudo.batchmate.Model;
 
-public class LiveModel {
+public class ListModel {
     private  int image;
     private String name;
 
-    public LiveModel(int image, String name) {
+
+
+    public ListModel(int image, String name) {
         this.image = image;
         this.name = name;
     }
+
+
 
     public int getImage() {
         return image;

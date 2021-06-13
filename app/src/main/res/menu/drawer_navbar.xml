@@ -22,6 +22,12 @@
         android:title="Invite Friends"
         />
 </group>
+    <group>
+      <item android:id="@+id/weHire"
+          android:title="We Are Hiring Teachers">
+
+      </item>
+    </group>
 
 
 

@@ -1,4 +1,4 @@
-package com.krudo.batchmate;
+package com.krudo.batchmate.Fragments;
 
 import android.animation.ArgbEvaluator;
 import android.os.Bundle;
@@ -18,8 +18,14 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.krudo.batchmate.Adaptor.LiveAdaptor;
+import com.krudo.batchmate.Adaptor.TrendingAdaptor;
+import com.krudo.batchmate.Adaptor.listAdaptor;
+import com.krudo.batchmate.Model.ListModel;
+import com.krudo.batchmate.Model.LiveModel;
+import com.krudo.batchmate.Model.TrendingModel;
+import com.krudo.batchmate.R;
 
-import java.util.AbstractList;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -144,7 +150,7 @@ public class HomeFragment extends Fragment {
         trendingModelList.add(new TrendingModel(R.drawable.painting));
         trendingAdaptor=new TrendingAdaptor(trendingModelList,getContext());
         trendingViewpager.setAdapter(trendingAdaptor);
-        trendingViewpager.setPadding(5,0,300,0);
+        trendingViewpager.setPadding(5,0,400,0);
 
     }
 

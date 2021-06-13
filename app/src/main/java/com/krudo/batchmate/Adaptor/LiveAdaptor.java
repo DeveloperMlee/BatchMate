@@ -1,4 +1,4 @@
-package com.krudo.batchmate;
+package com.krudo.batchmate.Adaptor;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,24 +10,25 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 
+import com.krudo.batchmate.Model.LiveModel;
+import com.krudo.batchmate.R;
+
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
-public class listAdaptor extends PagerAdapter {
+public class LiveAdaptor extends PagerAdapter {
+    List<LiveModel>liveModelList;
+    Context context;
 
-    private LayoutInflater layoutInflater;
-    private List<ListModel> models;
-    private Context context;
-
-    public listAdaptor(List<ListModel> models, Context context) {
-        this.models = models;
+    public LiveAdaptor(List<LiveModel> liveModelList, Context context) {
+        this.liveModelList = liveModelList;
         this.context = context;
     }
 
     @Override
     public int getCount() {
-        return models.size();
+        return liveModelList.size();
     }
 
     @Override
@@ -40,20 +41,15 @@ public class listAdaptor extends PagerAdapter {
     @Override
     public Object instantiateItem(@NonNull @NotNull ViewGroup container, int position) {
 
-        layoutInflater=LayoutInflater.from(context);
-        View view=layoutInflater.inflate(R.layout.list_class_item,container,false);
+        View view= LayoutInflater.from(context).inflate(R.layout.live_list_item,container,false);
+        ImageView liveImage;
+        TextView liveName;
 
-        ImageView listImage;
-        TextView listName;
-        listImage=view.findViewById(R.id.listImage);
-        listName=view.findViewById(R.id.listName);
-        listImage.setImageResource(models.get(position).getImage());
-        listName.setText(models.get(position).getName());
-
+        liveImage=view.findViewById(R.id.liveImage);
+        liveName=view.findViewById(R.id.liveName);
+        liveImage.setImageResource(liveModelList.get(position).getImage());
+        liveName.setText(liveModelList.get(position).getName());
         container.addView(view,position);
-
-        //get data
-
         return view;
     }
 
