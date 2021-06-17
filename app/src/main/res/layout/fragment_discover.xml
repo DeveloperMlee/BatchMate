@@ -43,6 +43,7 @@
         app:layout_constraintTop_toBottomOf="@+id/edtCoviRes">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/disYoga"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginRight="10dp"
@@ -62,6 +63,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/disGuitar"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginLeft="10dp"
@@ -99,6 +101,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/disChess"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginRight="10dp"
@@ -118,6 +121,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/disMaths"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginLeft="10dp"
@@ -155,6 +159,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/disPhysics"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginRight="10dp"
@@ -174,6 +179,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/disCoding"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginLeft="10dp"
@@ -211,6 +217,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/disPainting"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginRight="10dp"
@@ -230,6 +237,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/disEng"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginLeft="10dp"
@@ -268,6 +276,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/disFre"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginRight="10dp"
@@ -287,6 +296,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/disDance"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginLeft="10dp"
@@ -325,6 +335,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout10">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/disMore"
             android:layout_width="165dp"
             android:layout_height="60dp"
             android:layout_marginRight="10dp"

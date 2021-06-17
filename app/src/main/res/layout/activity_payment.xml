@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="7dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/roboto_medium_numbers"
+                    android:text="Guitar Classes"
+                    android:textColor="@color/black"
+                    android:textSize="28sp"
+                    />
+
+                <ImageView
+                    android:id="@+id/imageView20"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/ic_share_icon"
+                     />
+
+                <ImageView
+                    android:id="@+id/imageView21"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/ic_close"
+                 />
+            </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="start"
+    android:paddingLeft="10dp"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold"
+        android:text="By:"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Abhilash Rathor"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        />
+</LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif"
+                android:text="Starting From 10 July - 12 August "
+                android:textColor="#EA1B0C"
+                android:textSize="18sp"
+             />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#7A7777"
+               />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:paddingLeft="20dp"
+                android:fontFamily="@font/roboto_medium_numbers"
+                android:text="Days &amp; Timing"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+             />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="start"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_view_back"
+                    android:fontFamily="@font/abril_fatface"
+                    android:padding="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Mon-Wed-Fri"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_view_back"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/abril_fatface"
+                    android:padding="5dp"
+                    android:text="6 PM : 7 PM"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="15dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/priceDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/roboto_medium_numbers"
+                android:paddingLeft="20dp"
+                android:text="Price Details"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.068"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#7A7777"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/priceDetail" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.1"
+                android:fontFamily="@font/roboto_medium_numbers"
+                android:text="Guitar"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+
+                android:layout_marginLeft="8dp"
+                android:fontFamily="@font/roboto_medium_numbers"
+                android:text="-17 Classes"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView10"
+                app:layout_constraintStart_toEndOf="@+id/textView10"
+                app:layout_constraintTop_toTopOf="@+id/textView10"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/imageView22"
+                android:layout_width="18dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="124dp"
+                android:layout_marginLeft="124dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.1"
+                android:fontFamily="@font/roboto_medium_numbers"
+                android:gravity="end"
+                android:src="@drawable/ic_rupee"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView11"
+                app:layout_constraintEnd_toStartOf="@+id/textView16"
+                app:layout_constraintHorizontal_bias="0.81"
+                app:layout_constraintStart_toEndOf="@+id/textView11"
+                app:layout_constraintTop_toTopOf="@+id/textView11"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="0.3"
+                android:fontFamily="@font/roboto_medium_numbers"
+                android:gravity="center"
+                android:text="1199"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView22"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView22"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="2.6"
+                android:fontFamily="@font/roboto_medium_numbers"
+                android:text="G.S.T"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+
+            <ImageView
+                android:id="@+id/imageView23"
+                android:layout_width="40dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="240dp"
+                android:layout_marginLeft="240dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.1"
+                android:fontFamily="@font/roboto_medium_numbers"
+                android:gravity="center_vertical"
+                android:src="@drawable/ic_rupee"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView12"
+                app:layout_constraintEnd_toStartOf="@+id/textView17"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/textView12"
+                app:layout_constraintTop_toTopOf="@+id/textView12"
+                app:layout_constraintVertical_bias="0.888" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_weight="0.3"
+                android:fontFamily="@font/roboto_medium_numbers"
+                android:text="90"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView23"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="2.6"
+                android:fontFamily="@font/roboto_medium_numbers"
+                android:text="Coupon Discount"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="15dp"
+                android:layout_height="3dp"
+                android:layout_marginStart="120dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/textView13"
+                app:layout_constraintEnd_toStartOf="@+id/imageView24"
+                app:layout_constraintStart_toEndOf="@+id/textView13"
+                app:layout_constraintTop_toTopOf="@+id/textView13"
+                app:layout_constraintVertical_bias="0.43" />
+
+            <ImageView
+                android:id="@+id/imageView24"
+                android:layout_width="40dp"
+                android:layout_height="15dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/roboto_medium_numbers"
+                android:gravity="end"
+                android:src="@drawable/ic_rupee"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/view3"
+                app:layout_constraintEnd_toStartOf="@+id/textView18"
+                app:layout_constraintTop_toTopOf="@+id/view3"
+                app:layout_constraintVertical_bias="0.48000002" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/roboto_medium_numbers"
+                android:text="300"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView24"
+                app:layout_constraintVertical_bias="0.571" />
+
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#7A7777"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="2.6"
+                android:fontFamily="@font/roboto_medium_numbers"
+                android:text="Total Amount"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+            <ImageView
+                android:id="@+id/imageView25"
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="176dp"
+                android:layout_marginLeft="176dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/roboto_medium_numbers"
+                android:src="@drawable/bluue_ruppe"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView14"
+                app:layout_constraintEnd_toStartOf="@+id/textView15"
+                app:layout_constraintHorizontal_bias="0.67"
+                app:layout_constraintStart_toEndOf="@+id/textView14"
+                app:layout_constraintTop_toTopOf="@+id/textView14"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:fontFamily="@font/roboto_medium_numbers"
+                android:text="990"
+                android:textColor="#082AEA"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView25"
+                app:layout_constraintEnd_toStartOf="@+id/textView19"
+                app:layout_constraintTop_toTopOf="@+id/imageView25"
+                app:layout_constraintVertical_bias="0.428" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.3"
+                android:fontFamily="@font/roboto_medium_numbers"
+                android:text="/-"
+                android:textColor="#082AEA"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView15"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView15"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3"
+        app:layout_constraintVertical_bias="0.96">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/totalAmount"
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/roboto_medium_numbers"
+                android:src="@drawable/orange_ruppee"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.566" />
+
+            <TextView
+                android:id="@+id/txtTotalAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.3"
+                android:fontFamily="@font/roboto_medium_numbers"
+                android:text="990"
+                android:textColor="#EAC634"
+                android:textSize="26sp"
+                app:layout_constraintBottom_toBottomOf="@+id/totalAmount"
+                app:layout_constraintStart_toEndOf="@+id/totalAmount"
+                app:layout_constraintTop_toTopOf="@+id/totalAmount" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="0.3"
+                android:fontFamily="@font/roboto_medium_numbers"
+                android:text="/-"
+                android:textColor="#EAC634"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/txtTotalAmount"
+                app:layout_constraintStart_toEndOf="@+id/txtTotalAmount"
+                app:layout_constraintTop_toTopOf="@+id/txtTotalAmount" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/payBook"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                app:cardBackgroundColor="#EAC634"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView20"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/roboto_bold"
+                    android:gravity="center"
+                    android:text="Pay &amp; Book"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

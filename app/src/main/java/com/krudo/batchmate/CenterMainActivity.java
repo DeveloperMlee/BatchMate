@@ -42,8 +42,7 @@ public class CenterMainActivity extends AppCompatActivity {
         bottomNavigationView=findViewById(R.id.bottom_nav);
 //        bottomNavigationView.setSelectedItemId(R.id.homeFrag);
         getSupportFragmentManager().beginTransaction().replace(R.id.container,new HomeFragment()).commit();
-       bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
            @Override
            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                Fragment temp=null;

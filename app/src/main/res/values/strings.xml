@@ -6,4 +6,11 @@
     <string name="begin_your_child_s_journey">Begin Your Child\'s Journey</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="objective_one">learn the basics of guitar <br />techniques</string>
+    <string name="objective_two">short exercises, and supportive<br /> group projects</string>
+    <string name="objective_three">solid foundation for future growth</string>
+    <string name="how_participate">This class will be hosted on Zoom video conferencing platform. You will receive a WhatsApp notification30 minutes before class starts with a link to the class and access
+instructions.</string>
+
 </resources>
