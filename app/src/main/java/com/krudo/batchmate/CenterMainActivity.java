@@ -58,6 +58,7 @@ public class CenterMainActivity extends AppCompatActivity {
                        temp=new ProfileFragment();
                        break;
                }
+
                getSupportFragmentManager().beginTransaction().replace(R.id.container,temp).commit();
                return true;
            }
@@ -93,5 +94,19 @@ public class CenterMainActivity extends AppCompatActivity {
                 return true;
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        if(bottomNavigationView.getSelectedItemId()==R.id.homeFrag)
+        {
+            super.onBackPressed();
+            finish();
+        }
+        else{
+            bottomNavigationView.setSelectedItemId(R.id.homeFrag);
+        }
+
+
     }
 }

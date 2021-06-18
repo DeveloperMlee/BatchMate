@@ -1,6 +1,7 @@
 package com.krudo.batchmate;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.IntentCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -23,10 +24,4 @@ public class PaymentActivity extends AppCompatActivity {
         time.setText(getIntent().getExtras().getString("time"));
     }
 
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        startActivity(new Intent(getApplicationContext(),CenterMainActivity.class));
-        finish();
-    }
 }

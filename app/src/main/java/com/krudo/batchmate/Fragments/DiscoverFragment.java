@@ -440,6 +440,7 @@ public class DiscoverFragment extends Fragment {
         intent.putExtra("objTwo",objTwo);
         intent.putExtra("objThree",objThree);
         intent.putExtra("url",url);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY | Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }
 }
