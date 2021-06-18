@@ -42,7 +42,7 @@ public class SignUp extends AppCompatActivity {
         });
 
         if (mAuth.getCurrentUser() !=null){
-            startActivity(new Intent(getApplicationContext(),Home.class));
+            startActivity(new Intent(getApplicationContext(),CenterMainActivity.class));
            finish();
         }
 
@@ -97,7 +97,7 @@ public class SignUp extends AppCompatActivity {
             if(task.isSuccessful()){
                 Toast.makeText(SignUp.this, "Register Successfully", Toast.LENGTH_SHORT).show();
                 insertData();
-                startActivity(new Intent(getApplicationContext(),ChildInfo.class));
+                startActivity(new Intent(getApplicationContext(),CenterMainActivity.class));
                 finish();
 
             }else{
