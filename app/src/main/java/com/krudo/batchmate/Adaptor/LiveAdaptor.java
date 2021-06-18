@@ -1,15 +1,20 @@
 package com.krudo.batchmate.Adaptor;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.viewpager.widget.PagerAdapter;
 
+import com.krudo.batchmate.JoinClass;
 import com.krudo.batchmate.Model.LiveModel;
 import com.krudo.batchmate.R;
 
@@ -44,11 +49,20 @@ public class LiveAdaptor extends PagerAdapter {
         View view= LayoutInflater.from(context).inflate(R.layout.live_list_item,container,false);
         ImageView liveImage;
         TextView liveName;
+        CardView liveCardView;
 
         liveImage=view.findViewById(R.id.liveImage);
         liveName=view.findViewById(R.id.liveName);
+        liveCardView=view.findViewById(R.id.liveCardView);
         liveImage.setImageResource(liveModelList.get(position).getImage());
         liveName.setText(liveModelList.get(position).getName());
+        liveCardView.setOnClickListener(v -> {
+            Animation animation= AnimationUtils.loadAnimation(context,R.anim.fadein);
+            v.startAnimation(animation);
+            Intent liveIntent= new Intent(context, JoinClass.class);
+            liveIntent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            context.startActivity(liveIntent);
+        });
         container.addView(view,position);
         return view;
     }
