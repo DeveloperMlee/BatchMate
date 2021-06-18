@@ -68,6 +68,7 @@
                     app:cardCornerRadius="15dp">
 
                     <TextView
+                        android:id="@+id/overViewOne"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:fontFamily="@font/roboto_medium_numbers"
@@ -90,6 +91,7 @@
                     app:cardCornerRadius="15dp">
 
                     <TextView
+                        android:id="@+id/overViewTwo"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:fontFamily="@font/roboto_medium_numbers"
@@ -112,6 +114,7 @@
                     app:cardCornerRadius="15dp">
 
                     <TextView
+                        android:id="@+id/overViewThree"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:fontFamily="@font/roboto_medium_numbers"
@@ -207,6 +210,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/edtCoviRes">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cardMonToFri"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_marginRight="10dp"
@@ -226,6 +230,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cardTueToSat"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_marginLeft="10dp"
@@ -284,6 +289,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/edtCoviRes">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/TenToEle"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_marginRight="10dp"
@@ -303,6 +309,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/timeFiveToSix"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_marginLeft="10dp"
@@ -339,6 +346,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout10">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/timeSixToSev"
                     android:layout_width="165dp"
                     android:layout_height="60dp"
                     android:layout_marginRight="10dp"

@@ -13,16 +13,18 @@
         android:theme="@style/Theme.BatchMate"
         android:usesCleartextTraffic="true">
         <activity android:name=".PaymentActivity">
+
+        </activity>
+        <activity android:name=".OverviewActivity">
+
+        </activity>
+        <activity android:name=".CenterMainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".OverviewActivity">
-
-        </activity>
-        <activity android:name=".CenterMainActivity"></activity>
         <activity android:name=".ChildInfo" />
         <activity android:name=".Home" />
         <activity android:name=".SignUp" />
